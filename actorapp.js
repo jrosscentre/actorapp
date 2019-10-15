@@ -28,8 +28,7 @@ d3.select("#mvtitles")
 .enter()
 .append("li")
 .text(function (d){return d.title;})
-.on("click", function(d) {entermvnms(d);})
-.on("mouseon", function(d) {enterdscrptns(d);})
+
 
 }
 
