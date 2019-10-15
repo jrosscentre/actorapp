@@ -1,1 +1,18 @@
-
+body{
+    
+    background-color: navy;
+    
+}
+div{
+    
+    background-color:darkslategray;
+    color:white;
+    border: 5px solid lightblue;
+    margin: 2px;
+    
+    
+}
+h1{
+    
+    color:aquamarine
+}

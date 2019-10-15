@@ -15,7 +15,11 @@ movienamespromise.then(
     }
 )
 
-
+var clearshit = function ()
+{
+    d3.select("#mvactors")
+    .remove()
+}
 var entermvnms = function (mvnms)
 {
 d3.select("#mvtitles")
@@ -24,8 +28,8 @@ d3.select("#mvtitles")
 .enter()
 .append("li")
 .text(function (d){return d.title;})
-    .on("click", function (d){enterdscrptns(d)})
-
+.on("click", function(d) {entermvnms(d);})
+.on("mouseon", function(d) {enterdscrptns(d);})
 
 }
 
@@ -48,6 +52,7 @@ var enterdscrptns =function (dscrptns)
     .enter()
     .append("li")
     .text(function (d){return d.description})
+    
     
 }
 
